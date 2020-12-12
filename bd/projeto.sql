@@ -8,7 +8,7 @@ CREATE TABLE usuario(
     senha varchar(45) NOT NULL,
     nome varchar(45) NOT NULL,
     dataCadastro date NOT NULL,
-    genero TINYINT(4),
+    genero TINYINT(3),
     dataNasc date
 );
 
@@ -36,7 +36,7 @@ CREATE TABLE sessao(
 CREATE TABLE transtorno_has_sintoma(
 	idTranstorno INT,
     idSintoma INT,
-    FOREIGN KEY (idTranstorno) 
+    FOREIGN KEY (idTranstorno)
 		REFERENCES transtorno(id)
         ON DELETE CASCADE
         ON UPDATE CASCADE,
