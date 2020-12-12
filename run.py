@@ -14,33 +14,29 @@ def sobre():
 def chat():
     return render_template("chat.html")
 
-@app.route("/sobreIA.html")
-def sobreIA():
-    return render_template("sobreIA.html")
-
-@app.route("/bibliografias.html")
-def bibliografias():
-    return render_template("bibliografias.html")
-
-@app.route("/IApersonalizada.html")
-def IApersonalizada():
-    return render_template("IApersonalizada.html")
-
 @app.route("/IA.html")
 def IA():
     return render_template("IA.html")
+
+@app.route("/pesquisadores.html")
+def pesquisadores():
+    return render_template("pesquisadores.html")
+
+@app.route("/personalizado.html")
+def personalizado():
+    return render_template("personalizado.html")
 
 @app.route("/orientacoes.html")
 def orientacoes():
     return render_template("orientacoes.html")
 
-@app.route("/analise.html")
-def analise():
-    return render_template("analise.html")
+@app.route("/login.html")
+def login():
+    return render_template("login.html")
 
-@app.route("/signin.html")
-def signin():
-    return render_template("signin.html")
+@app.route("/cadastro.html")
+def cadastro():
+    return render_template("cadastro.html")
 
 
 if __name__ == "__main__":
