@@ -26,6 +26,10 @@ def pesquisadores():
 def personalizado():
     return render_template("personalizado.html")
 
+@app.route("/perfil.html")
+def perfil():
+    return render_template("perfil.html")
+
 @app.route("/orientacoes.html")
 def orientacoes():
     return render_template("orientacoes.html")
